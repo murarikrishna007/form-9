@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+html,body{
+    height: 100%;
+
+}
+body{
+    display: grid;
+    place-items: center;
+    background: #5ea19a;
+    text-align: center;
+}
+.content{
+    width: 330px;
+    background: #7dc9b8;
+    box-shadow: -3px -3px 7px #ffffff,
+                2px 2px 5px rgba(94,104,121,0.288);
+    border-radius: 10px;
+    padding:40px 30px ;
+    
+}
+.content .field{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    position: relative;
+
+}
+.field input{
+    height: 100%;
+    width: 100%;
+    padding-left: 45px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    background: #dde1e7;
+    box-shadow: inset 2px 2px 5px #babecc,
+                inset -5px -5px 1px #ffffff73;
+    border-radius: 25px;
+    color: #595959;
+
+}
+.field input:focus{
+    box-shadow: inset 1px 1px 2px #3ecaa7,
+    inset -1px -1px 2px #60a88ae8;
+}
+.field:nth-child(2){
+    margin-top: 20px;
+
+}
+
+.field span{
+    position: absolute;
+    width: 50px;
+    line-height:50px ;
+    /* or */
+    /* position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 20px; */
+    /*  */
+    color: #595959;
+}
+.field label{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 45px;
+    pointer-events: none;
+    color: #5ea19a;
+
+}
+.field input:valid ~ label{
+    opacity: 0;
+}
+.forgot-pass{
+    text-align: left;
+    margin: 10px 0 10px 5px ;
+
+}
+.forgot-pass a{
+    font-size: 16px ;
+    color: #3498db;
+    text-decoration: none;
+
+
+}
+.forgot-pass:hover a{
+    text-decoration: underline;
+
+}
+button{
+    margin: 15px 0;
+    width: 100%;
+    height: 50px;
+    color: #595959;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background: #dde1e7;
+    box-shadow: 2px 2px 5px #babecc,
+                 -5px -5px 1px #ffffff73; 
+    border-radius: 25px;
+    outline: none;
+}
+button:focus{
+    box-shadow: inset 2px 2px 5px #babecc,
+                inset -5px -5px 1px #ffffff73; 
+    color: #3498db;
+}
+.signup{
+    color: #595959;
+    font-size: 16px;
+    margin: 10px 0;
+
+}
+.signup a{
+    color: #3498db;
+    text-decoration: none;
+
+}
+.signup a:hover{
+    text-decoration: underline;
+}
